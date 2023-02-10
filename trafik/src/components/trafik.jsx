@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/trafik.css";
 
-
 export default function Tarif(props) {
   const classCard=(props.isSelected ? "selected" : '');
   return(

@@ -33,13 +33,14 @@ function App() {
       <header className="App-header">Наши тарифы</header>
       <div className="plans">
         {rates.map((card, i) => (
-          <Trafik
+          <Trafik 
+          key={i}
             rate={card.rate}
             price={card.rate}
             speed={card.speed}
             theme={themes[i]}
             isSelected={card.isSelected}
-          ></Trafik>
+          />
         ))}
       </div>
     </div>
