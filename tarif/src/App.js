@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Trafik from "./components/trafik";
+import Tarif from "./components/tarif";
 import themeA from "./styles/300.module.css";
 import themeB from "./styles/450.module.css";
 import themeC from "./styles/550.module.css";
@@ -33,7 +33,7 @@ function App() {
       <header className="App-header">Наши тарифы</header>
       <div className="plans">
         {rates.map((card, i) => (
-          <Trafik 
+          <Tarif
           key={i}
             rate={card.rate}
             price={card.rate}
